@@ -1,0 +1,62 @@
+<div id="clear1">
+<form action="#" metgod="post"novalidate="true" id="formclear">
+<div class="form-group">
+  <div class="mb-3 ">
+    <label for="exampleInputPassword1" class="form-label">Sports</label>
+    <input type="password"  class="form-control" id="sport" required="true" required />
+  </div>
+  <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Labs</label>
+      <input type="password" class="form-control" id="labs" required />
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Finance</label>
+        <input type="password" class="form-control" id="finance"required />
+      </div>
+       <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Library</label>
+              <input type="password"class="form-control" id="library" required />
+            </div>
+
+  <button type="submit" class="btn btn-primary" onclick="validate()">Submit</button>
+  </div></form>
+  </div>
+<div class="mb-3" id="clearCerti">
+    <h1 id="cleared"></h1>
+</div>
+
+<script>
+
+function validate(){
+    var sports= document.getElementById("sport").value
+    var lab= document.getElementById("labs").value
+     var finance= document.getElementById("finance").value
+      var library= document.getElementById("library").value
+
+      var count=0
+     if(sports=="1234"){
+        count++
+     }
+     if(lab=="1234"){
+        count++
+     }
+      if(finance=="1234"){
+             count++
+          }
+     if(library=="1234"){
+            count++
+         }
+     if(count==4){
+        document.getElementById("cleared").innerHTML="Cleared for admit card";
+        document.getElementById("clear1").style.display="none";
+        document.getElementById("clearCerti").style.display="block";
+     }
+     else{
+        document.getElementById("cleared").innerHTML="Not cleared for admit card";
+         document.getElementById("clear1").style.display="none";
+                document.getElementById("clearCerti").style.display="block";
+     }
+
+}
+
+</script>

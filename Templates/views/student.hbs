@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+    #clearCerti{
+        display:none;
+    }
+
+      .btn-link{
+        text-decoration: none;
+        color: black;
+      }
+      #fees{
+        /*display: none;*/
+      }
+      #scholar{
+        /*display: none;*/
+      }
+      #clear{
+        display: none;
+      }
+      .page{
+        margin-bottom:15%;
+      }
+      @media screen and (max-width: 400px) {
+  .detail {
+    /*border: 2px solid black;*/
+    /*margin-left: 50px;*/
+    /*width: 100%;*/
+    font-size: 40%;
+    text-align: left;
+  }
+  .footer{
+    /*border: 2px solid blue;*/
+    /*margin-top: 20px;*/
+  }
+  .content{
+    /*border: 2px solid green;*/
+    margin-bottom: 10%;
+  }
+  .page{
+  margin-bottom:40%}
+
+
+}
+
+    </style>
+
+  </head>
+  <body>
+
+
+    <!-- navbar -->
+{{>navbar}}
+
+
+<div class='container-sm page' style="margin-top: 10%;height: 50vh;">
+  <div class='row'>
+    <div class='col-4'>
+  <ul class="list-group">
+  <li class="list-group-item"><button class="btn btn-link detail" onclick="dispscholar()" style="margin-left:-5%;">Scholarship</button></li>
+  <li class="list-group-item"><button class="btn btn-link detail"  onclick="dispclear()" style="margin-left:-5%;">Clearances</button></li>
+</ul>
+    </div>
+    <div class='col-8 content'>
+      <div class='container overflow-auto' style="border: 2px solid rgba(255, 0, 0,0.3);height:70vh">
+
+        <div id="scholar" >
+        <h4 class="shadow-lg p-3 mb-5 bg-white rounded">  Scholarships and Finanacial Aids</h4>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+       Welfare department, Govt. of Jharkhand
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+              <h6>Who can apply:</h6><br>
+              <ol>
+                  <li>Student must be of Jharkhand State.</li>
+                  <li>Student should belong to any of these categories-Schedule Tribe (ST), Schedule Cast (SC) or Other Backward Class (OBC).
+</li>
+                    <li>Student's Family Income from all the sources should not exceed as per the list given below:
+                      <ul>
+                        <li>Schedule Tribe (ST) or Schedule Cast (SC) :Rs 2,00,000/- (Rs Two Lakh Only)
+</li>
+  <li>Backward Class (OBC) :Rs 1,00,000/- ( Rs One Lakh Only)
+</li>
+                      </ul>
+</li>
+              </ol>
+              <h6 style="display: inline">Financial Support : </h6><p style="display: inline;">Tuition fee and maintenance charges.</p>
+              <br>
+              <a href="https://ekalyan.jharkhand.gov.in/default?lb=en">View</a>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+       Foundation for Academic excellence and access
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+          <p>FAEA grants scholarships to students to facilitate undergraduate studies in arts/ commerce/ science / medical/ engineering and pursuing of other technical and professional disciplines at any university/institution/college in India.</p>
+          <h6 style="display:inline">Number of scholarships : </h6>50<br>
+          <h6>Eligibility Criteria : </h6>
+          <ul>
+            <li>Students belonging to socially and economically disadvantaged sections in the BPL category.</li>
+            <li>Students who have passed Class XII from a recognized board in India.</li>
+            <li>1st year under-graduate students.</li>
+          </ul>
+          <h6>How to apply : </h6>
+          <ul>
+            <li>You may apply online at www.faeaindia.org (most preferred way).</li>
+            <li>The form can be downloaded from FAEA website.</li>
+          </ul>
+          <a href="http://www.faeaindia.org">View</a>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Special Scholarship Scheme for Jammu & Kashmir
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        Students belonging to the State of Jammu & Kashmir, pursuing general degree courses, medical courses, engineering courses, etc. outside the State of J&K , may apply for scholarship under this scheme, through the institute in which they are studying.<br>
+        <a href="http://www.aicte-jk-scholarship.in">View</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingFive">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+      National Handicapped Finance and Development Corporation
+      </button>
+    </h2>
+    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <ul>
+          <li>Under this scheme, 500 National Scholarships will be awarded to eligible students with disabilities for pursuing higher academic/professional or technical qualification.</li>
+          <li>Scholarship of Rs 1000/-p.m. for hostellers and Rs700/-p.m. for day scholars undertaking professional courses at graduation and higher level and Rs700/-p.m. for hostellers and Rs.400/-p.m. for day scholars pursuing Diploma/Certificate level professional courses. Course fee is reimbursed upto ceiling of Rs 10,000/-per year.</li>
+        </ul>
+        <a href="http://www.nhfdc.nic.in">View</a>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingSix">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+       NTPC scholarship for engineering students
+      </button>
+    </h2>
+    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <h6 style="display:inline">Number of Scholarships : </h6>35(20 SC, 10 ST and 05 PC)<br>
+        <h6>Eligibility Criteria : </h6>
+        <ul>
+          <li>Students belonging to SC/ST/Physically Challenged categories (Visually Handicapped/ Hearing Handicapped/ Orthopaedically Handicapped) and pursuing 4 years full time degree course in Engineering in the disciplines of Electrical, Instrumentation, Mechanical, Computer Science, Electronics / Telecommunication from a college/ university/ institute.</li>
+          <li>They should not be receiving any financial aid or assistance from any source.
+</li></ul>
+<h6 style="display:inline">Financial Support : </h6>The amount of scholarship is Rs 1500/- P.M.<br>
+        <a href="https://www.ntpc.co.in/index.php?option=com_content&view=article&id=11&Itemid=91&lang=en">View</a>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingSeven">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+        Indian Oil Educational Scholarship Scheme
+        </button>
+    </h2>
+    <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        IndianOil offers 2600 Scholarships for Students of 10+/ITI, Engineering, MBBS & MBA Courses on merit-cum-means basis pursuing full time/regular courses (not correspondence/distance/online mode) in these streams & studying in Schools / Colleges / Institutions / Universities recognized by MCI / AICTE / State Education Boards / State Govt. / ICSE / ISC / CBSE / Central Govt. / Association of Indian universities.<br>
+        <a href="https://iocl.com/pages/indianoil-academic-scholarships-overview">View</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingEight">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+       CDIF Scholarship Program TATA CUMMINS
+        </button>
+    </h2>
+    <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">This scholarship is awarded to the students from socially and economically disadvantaged background. The scholarship program is entitled for students pursuing Diploma/ Degree in Engineering/ other professional degree courses from various locations where Cummins Group Company has presence.
+        <br>
+        <a href="https://www.cummins.com/en/in/company/cummins-india?locset=IN">View</a>
+</div>
+    </div>
+  </div>
+
+<div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingNine">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+        Merit Cum Means Scholarship
+        </button>
+    </h2>
+    <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        The objective of the Scheme is to provide financial assistance to the poor and meritorious students belonging to minority communities to enable them to pursue professional and technical courses. These scholarships are available for studies in India only and are awarded through an Agency designated by the State Government/UT Administration for this purpose.<br>
+        <a href="https://www.minorityaffairs.gov.in/SCHEMES/PERFORMANCE/Scholarship-Schemes/merit-cum-means-scholarship-scheme">View</a>
+
+      </div>
+    </div>
+  </div>
+
+<div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTen">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+      O.P. Jindal Engineering and Management Scholarships (OPJEMS)
+        </button>
+    </h2>
+    <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        First 3 toppers of 2nd, 3rd and 4th year based on the academic performance in the previous year, of the following streams are eligible:
+        <br>
+        <ul>
+          <li>Civil Engineering</li>
+          <li>Electrical Engineering</li>
+          <li>Mechanical Engineering</li>
+          <li>Metallurgical Engineering</li>
+
+        </ul>
+        <a href="https://www.opjems.com">View</a>
+      </div>
+    </div>
+  </div>
+
+<div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingEleven">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+       Post-Matric Scholarships for Students belonging to the Minority Communities
+        </button>
+    </h2>
+    <div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">The objective of the scheme is to award scholarships to meritorious students belonging to economically weaker sections of minority community so as to provide them better opportunities for higher education, increase their rate of attainment in higher education and enhance their employability.
+        <br>
+        <a href="https://minorityaffairs.gov.in/SCHEMES/PERFORMANCE/Scholarship-Schemes/post-matric-scholarship-scheme">View</a>
+</div>
+    </div>
+  </div>
+
+<div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwelve">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
+       Scholarship of ONGC limited, Dehradun
+        </button>
+    </h2>
+    <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        Electrical & Mechanical Engineering topper gets this scholarship after 6th semester.<br>
+        <h6 style="display:inline">Number of Scholarships : </h6>40<br>
+        <h6 style="display:inline">Financial Support : </h6>Years : 
+        <br>
+        <ul>
+          <li>12,000/-</li>
+          <li>12,000/-</li>
+          <li>18,000/-</li>
+          <li>18,000/-</li>
+        </ul>
+        <h6>Eligibility Criteria : </h6>
+        <ul>
+          <li>Candidate should have obtained 60% marks in 12th class and overall grade point average(OGPA) of 6.0 in 10 points scale of grading system or its equivalent as applicable to the courses in Engg. discipline and P.G.Courses.</li>
+          <li>Annual income of parents from all sources should not be more than Rs 1.5 lakhs ( i.e. Rs 12,000/- per month).</li>
+          <h6 style="display:inline">How to apply : </h6> Institute itself applies every year on behalf of students.<br>
+          <a href="https://ongcscholar.org/#/">View</a>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+      </div>
+        <div id="clear" >
+            {{>clearance}}
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{>footer}}
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+
+    <script type="text/javascript">
+
+      function dispscholar(){
+        document.getElementById("scholar").style.display="block";
+        document.getElementById("clear").style.display="none";
+      }
+      function dispclear(){
+        document.getElementById("clear").style.display="block";
+         document.getElementById("scholar").style.display="none";
+         document.getElementById("clearCerti").style.display="none";
+         document.getElementById("clear1").style.display="block";
+
+      }
+
+    </script>
+  </body>
+</html>
